@@ -1,0 +1,229 @@
+{
+  "vestido-azul": {
+    "ancho": 904,
+    "alto": 1130,
+    "anchos": [
+      360,
+      540,
+      720,
+      904
+    ],
+    "base": "/fotos/vestido-azul-e1e7e15e",
+    "placeholder": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4INoAAADwBACdASoYAB4APt1mp1AopaMiqAqpEBuJbAC7ABEc+iD/fKfSA9+zXlqgSklFcGgA/vDTeU07uiz12xXpp+Hvhl0jTPSZkfGqJ25ly/zf7AKU0MQJlJduUlluX6ctRJ18DkhVbo1jK+se59f0MG3UClTrHLOZo5j9DUO4SBHBjmN6UrbE4/YEEOa63VPkW+9lN0Njr9l/BXYZSMWEki1NH6NZwk0mMNjlCFgKI+MIHiQVsmY9MrI0SnJ7ooR1IwIud51+Rc6NOThELKs3C8cT8smQKQTodqAAAA==",
+    "color": "#403d4a",
+    "alt": "Vestido azul rey con escote en V y falda de vuelo"
+  },
+  "vestido-rojo": {
+    "ancho": 904,
+    "alto": 1130,
+    "anchos": [
+      360,
+      540,
+      720,
+      904
+    ],
+    "base": "/fotos/vestido-rojo-0acef843",
+    "placeholder": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAAAwBQCdASoYAB4APt1mqlCopSOiqAgBEBuJbACsFQAAN+Dbx6Zdi8CgIynCF6Vrr5LI6AD+8NSrRXr61YWweNLXqs5MA1cPlASx3EExJ0Zoi50dpxX5H0bt8gj53vVF7l2+MBvB+lmWMIlHayS4dod7I75pX6qcM8mRqhqOZZmVsetiNCVNsEmNh6iepGLmJ2qvWG+YfSaJFFlXdNfE/DAR0ym1EEmTPy3xLJmN+I/2TKdltoho+Jgx2WdbE7vuiMaqHZl4DPRCb2gUW8iTq3OZOAAAAA==",
+    "color": "#5e2c34",
+    "alt": "Vestido rojo con lazo en la cintura"
+  },
+  "vestido-negro": {
+    "ancho": 904,
+    "alto": 1130,
+    "anchos": [
+      360,
+      540,
+      720,
+      904
+    ],
+    "base": "/fotos/vestido-negro-5b3c2e50",
+    "placeholder": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAAAQBQCdASoYAB4APt1orFCopaQiqAgBEBuJQBWAAiOezWpeL/q0R99gDzIpOEHf5I1AAP7w03lNO6GFxJ6ooL2LHxzBPqUCFXUGqnYck0zdpF7Y7bXYfl+wklMA92RIq9H6O+cqXqfRtlckC0MlzIij5UeBBBrAGPxmmCGT4qLYNh1nthXDXHMFoOayk8ii0kNYONq8YVLlQJvd6rMwQmVes6B0oquZxMO1GLDcigFxJ5j+XdacQ7ebUniz4V95UDp+v53GheoF4AAA",
+    "color": "#423734",
+    "alt": "Vestido negro con corset y transparencias"
+  },
+  "vestido-fucsia": {
+    "ancho": 904,
+    "alto": 1130,
+    "anchos": [
+      360,
+      540,
+      720,
+      904
+    ],
+    "base": "/fotos/vestido-fucsia-681cb5d5",
+    "placeholder": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABwBQCdASoYAB4APt1kqE+opSOiKAqpEBuJbAC28BAAOJqDHVmGj3rVvIMaA2M53AsKw38AAP7w03lNi8yGkGMOJD2o6hA9UIyT/a1U54x94yIYiTPN6dyvY+sI9CHF9dF09GdCHWINSqvxHDLfte9ZBIrM28OXYuEle4YVMg5TxT58z8l76TfBInjaZTaSBZMoWF8V7eUnI9tqAJUUgti4whI+NDtwhfA+65OAAAA=",
+    "color": "#562d37",
+    "alt": "Vestido fucsia de manga larga ajustado"
+  },
+  "melli-plano": {
+    "ancho": 766,
+    "alto": 766,
+    "anchos": [
+      360,
+      540,
+      720
+    ],
+    "base": "/fotos/melli-plano-13a34806",
+    "placeholder": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAABQBQCdASoYABgAPt1mrFEopSQiqAgBEBuJQBllgexsfd38m4uTBRJXfh6siYd2biDQlgAA/lRcLiwbUBCO8kJMKpI+fdQu2f2HXjUYEgA2CLsqObqyDJvz1kvHh5U8ZxfUlFggZcg0DJ7FWwF4sxaSG1HsfLTPLDxp0mg8S84+ZUUXr42miAr7BiCp0X2uSg8jGcLBMv0MF1t5yxj8L8ssj0CHvpvQNc0RmVyU4my89cJHjiA3/96quAAAAA==",
+    "color": "#80766e",
+    "alt": "Cuatro Short Melli apilados con sus cinturones: negro, café, beige y beige claro"
+  },
+  "melli-detalle": {
+    "ancho": 708,
+    "alto": 708,
+    "anchos": [
+      360,
+      540,
+      708
+    ],
+    "base": "/fotos/melli-detalle-b17dc765",
+    "placeholder": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBQCdASoYABgAPt1eqU0opSQiKA1REBuJZQDLpBEyIDYhaUj7U98lp7BrPLVG0iI4gADifwS20VKb1tiKJ59kn5tf5aByc0fzQdgY5jyGiwJJ7bgyBsQTW913ulwz3HbetOHoQ1GSXPPlLfpc+rm+d1D3HCOQFLAAAA==",
+    "color": "#3a3535",
+    "alt": "Short Melli café con su cinturón a juego y hebilla dorada: talle alto y pinzas"
+  },
+  "outfit-rojo": {
+    "ancho": 967,
+    "alto": 1209,
+    "anchos": [
+      360,
+      540,
+      720,
+      967
+    ],
+    "base": "/fotos/outfit-rojo-965aa6ec",
+    "placeholder": "data:image/webp;base64,UklGRkoBAABXRUJQVlA4ID4BAACQBgCdASoYAB4APt1cpUyopSOiMAgBEBuJbACsMuAUgTGSWIF0fjvtEnVXYVUe2DGqmKeYb7kENcXGTgeAAP7qQwqH8zoRNro1WVen/kUw1WS+P2lRLmKUNwmp4ncxk3jAnjjUF8h+5aPbD1uqqu62X18dM3467sCkjN/SwJWQff5ipZmQc6+bw8/6/y1hNP2sSiBHUeJlYxCAfanUTobcoOe/DVF/MDvGfQF+cIhl15bxeK9ph57C05HrtwRCfRPahZrsQXgsf+017UBDQRs0Vl7mfdOMU0ILriJqlhs73Y/CTMlg0KMTMh2LVvMEYkxSQDw5UJ5QqytkQCnPS6DxnoEDz7e0N9D6f2go6sbo6Wcgt+r2cdQwI8J7QnSzyLYjfdERdV2H/DYJwDf8b7nrjOlAZ9diYoybHxQI3AA=",
+    "color": "#8f6a69",
+    "alt": "Blusa roja de mangas caladas con Short Melli beige claro"
+  },
+  "outfit-negro": {
+    "ancho": 967,
+    "alto": 1209,
+    "anchos": [
+      360,
+      540,
+      720,
+      967
+    ],
+    "base": "/fotos/outfit-negro-1a9c5104",
+    "placeholder": "data:image/webp;base64,UklGRiYBAABXRUJQVlA4IBoBAABwBQCdASoYAB4APt1iq08opSQiKAqpEBuJZACzgYyobT19bkeLYsAYnFJT6QazO255UNt4AP7RelRlUHBwO4XkSaKA2bdFPyvuQAs6A2meKcrp1qUzI3S21nvu/ZiPjvO1wtQv2LUfpBM+qlYXmJdRQ2YPq/y5vdOA0cSfUfM0VCzXfaQ7JGJlWkDY8wfAmn3c0XqG16tqDKL5VUfvfj5SM8h9YvWe5Htl8VeLttWhOwUCMRqOLFQA/LP5G3oF6RtDRdvDjxqn7EEPRT6RJSh1JFzADkdV62LK774dqmpSKt+YrBoTkKgA8O6NRj/T8zVe4Q73nid0o5NYcrtDeAZNWBhc12V3MgtpYwGVolgqJkY5rpNmvJAAAAA=",
+    "color": "#70615e",
+    "alt": "Blusa negra de mangas caladas con Short Melli café"
+  },
+  "outfit-azul": {
+    "ancho": 967,
+    "alto": 1209,
+    "anchos": [
+      360,
+      540,
+      720,
+      967
+    ],
+    "base": "/fotos/outfit-azul-9e1757aa",
+    "placeholder": "data:image/webp;base64,UklGRjQBAABXRUJQVlA4ICgBAAAQBgCdASoYAB4APt1gp04opaOiMBgIARAbiWwAtQjQeEAwzBljpfe9oAI70R9OemgOEKiW1k4v4AAA/DjASsuyPHOmJxhifd0t0pAbiYdTegDfW1H3QGSSbYe2enK9nsXNTwQ014BcJ/Ken2ILDgkJWxgobg93qYrpU3rdiIch82w1Vk9vgqng/5Fd5MSsKlFeCaUujis4lq+bS8rODHGM/6In7+0t21XXoqfeAOfjAhwP9pp0w88gCHn1YRsVFNI9vUAKEEZiYjRbg4Zjphs+vQr3VJe6rlep6bd94PBqOHw35xB+lwGt0lkpfCcZl4gwQYxb3mJuZRNX3+pJEzQ5Hqv2lUC3epdvI51HPlKW7pNZCGpJeSkjfKaJ+lfGtCPBhrA6FPQAAA==",
+    "color": "#716b65",
+    "alt": "Blusa azul de mangas caladas con Short Melli beige"
+  },
+  "conjunto-marfil": {
+    "ancho": 445,
+    "alto": 556,
+    "anchos": [
+      360,
+      445
+    ],
+    "base": "/fotos/conjunto-marfil-b5778e9c",
+    "placeholder": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAACwBQCdASoYAB4APt1Yp00opKOiMBgMARAbiWMArjdfwCc5IX4FVMrVAURnbe9ofAI0IAfo87gA/f7Cnr2B0vy3tqn5C5E+jDMUoooh9wzRqvD3ea4pA7JbjgZGfL5hgzegFa0SzbmL1DOcIb5XqEZYzylTU3XQzHEENfA7UnTdBvIbNweHMjbaZ9G2OEkg5Bom6q3/yWXcWcxXTIAAAA==",
+    "color": "#aca7a8",
+    "alt": "Conjunto marfil: chaleco cruzado con hebilla dorada y pantalón a juego"
+  },
+  "look-camel": {
+    "ancho": 720,
+    "alto": 900,
+    "anchos": [
+      360,
+      540,
+      720
+    ],
+    "base": "/fotos/look-camel-6947b4ea",
+    "placeholder": "data:image/webp;base64,UklGRjIBAABXRUJQVlA4ICYBAAAQBgCdASoYAB4APt1epkyopSOiMAgBEBuJZgCdMoJYAII0XllyvIJkMRsZI7hy5pVVpzgzX3aKnMAA/pXswNhAxl+YvUdzqS4nbuCtIi+h32Fa6fuX0nU0K/OGBZegPcX4Fd/d+G6JvZeMwihqaVaalxcNAEvYCsLrjH9vQ3sWWB1Kg/7lWW8outyYwhfmd7y0aTo5oey55m6vE4+DKoi1wy6XueE7n9EIs+9jVX2wCCPCT5fuTWppury3vEv/PpwWxxUaOjMLqHYpr0T+5sSGDpxsbzf2i4ZPhVOpGmv2E9zM4iWe+NVuePQKtjUoyVs0uB6AH9JvCLT09GJKfhspIJRgktLTH6BwPCW+FcCxMdTKrO2uDcgtR5Qg5Cv8/BCDkhUzAAA=",
+    "color": "#9e7e6b",
+    "alt": "Vestido tipo blazer sin mangas color camel con cinturón blanco"
+  },
+  "carteras": {
+    "ancho": 720,
+    "alto": 900,
+    "anchos": [
+      360,
+      540,
+      720
+    ],
+    "base": "/fotos/carteras-a36a60f8",
+    "placeholder": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAADwBQCdASoYAB4APt1cpkyopSOiMAgBEBuJQBdgZf05r6oZTAA5tEazSBTy3GAdVUAdH1Yji9ssAAD+U/evGjgmNZ6P2/FYpL0hTC8zaK/e2sht0LvVGEz8bBIe3+bqkCUMZ0sIboIFkh6DniETKdSW9NYonRTYV0bgnTJagu9WfJdsxpCn5k5xp1VOTKM1MNVonpctdAmzw/d3VkvfK39WqDdS9P13FIxckuJA3P50hmzivNRdKkAJZEpruQn53eu+AAAA",
+    "color": "#b0acab",
+    "alt": "Dos carteras, una blanca con monograma y una rosa, sobre el sofá capitoné de la tienda"
+  },
+  "tienda-vitrina": {
+    "ancho": 720,
+    "alto": 1280,
+    "anchos": [
+      360,
+      540,
+      720
+    ],
+    "base": "/fotos/tienda-vitrina-cfdc0bb4",
+    "placeholder": "data:image/webp;base64,UklGRo4BAABXRUJQVlA4IIIBAADQBwCdASoYACsAPt1arVAopKQiqrgKARAbiWQApIPxbPChx2lhipUFbIsuNEHyuK+PY/v3mEQazF/T5e3Kg5AcwSGljN96AAD+mqyhiWVf0bpWOHRH6RZKMGzXeJVINDtw5lHRm33E7+AaYeo2FQoUL3xeS//i1WG7rj6QzTTWIJ+Tu0JTIgCRYAvt+4vrA2pemt68ZdIg9MgqNoz1x+PYBZv/7ihpAvc+A09VvGSwxK2sltyvPvTsaCnieapgaGynaXPSdI/2AD8MTAbiWu4omdj3cW/5YSf9J5zLWKkEvwuaXKg2NUcz6mNIob6sLpbCCOX295pt6DccByRMg8A5mHwy1oOPztKu192s5VvfIYk4z+XbIA+iKohU1AcPvQG7eqOIpPXPV/GQ5QIQEyjbLCGRUrzxM3A13XoI6skQ721DNPY3DVzubM0WIwc/xLRPamx8fnhtMH9s3B5XBmsLIO4wjtZf8SEoJywM4IoBsUJOQ9DI0JxNv1oPRicLT5OgAA==",
+    "color": "#8b7877",
+    "alt": "Vitrina de Ellie con un maniquí y una clienta mirando la ropa"
+  },
+  "tienda-vitrina-ancha": {
+    "ancho": 716,
+    "alto": 537,
+    "anchos": [
+      360,
+      540,
+      716
+    ],
+    "base": "/fotos/tienda-vitrina-ancha-6b37dbae",
+    "placeholder": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABQBQCdASoYABIAPt1kp1AopSMiqAqpEBuJZQCdABIvrusSWNGmrqdOocCxpFBk/p2FqAAA/ne7oTCnqa6LLrmjU2vowqo8DzaVuEBvznI7dshaGec1GwaPuArOJa4uJeSfEqSbLtkzvBiV/xwc/lIbJOZbjQfwvnEbWFrQBkwSZyxHUSldbbOdGD83+AjIH9r2QukTjk4sflT0bvTHpV3nCaHGsADTmKaNzyrykI4dwRFFnAAAAA==",
+    "color": "#8b7f7a",
+    "alt": "Vitrina de Ellie con un maniquí y una clienta mirando la ropa"
+  },
+  "historia-camel": {
+    "ancho": 720,
+    "alto": 1280,
+    "anchos": [
+      360,
+      540,
+      720
+    ],
+    "base": "/fotos/historia-camel-f082d088",
+    "placeholder": "data:image/webp;base64,UklGRpgBAABXRUJQVlA4IIwBAABQCACdASoYACsAPt1krFCopSQiqrgIARAbiWIAnTLKfBHZnfEuseJB1Se9Qdv/047psL9HXJsQxxEF5Us2jSztDJS9112XQAL9vIAA/pRMo+9IwIoQtgXyZg8sIQ+mdKKBaOWAsZbFxIQMgOsoqMbW75jdcoq2H4+JrMYoY1NNqG7l6XIoC5svoCZVsYc+K+4GUURCVXZuNDftgGskylZvcyz3hNsyrfpi0IKeaxvBrf+vutOEUpQ21PtbX5WXoVPU9+MxmDAZJlBu3AVPiRjl7yZl5XnTguuEZepfnRD681wta+wOqePtGMn/4NOSL7uEtl4gr8L4PIauv7TLUnfYmQdoVDm1MoXSVxEk/Pt3EySbC5lrXflVSTXdByvO//aIgBWU0h2Cx2nOPJOnwelvOWxyU6B890gG3N+lS4N7AmERCvk2JSZpfn6GERAkTOyPNFyY/uqzJY82bZYwN3pwtLV6Iq9hvYiUAo78zMVLj4YE35LdTmlZbdx/lHf9efruXm4wW+bYgSmgAAA=",
+    "color": "#a28775",
+    "alt": "Historia de Instagram: luce increíble con poco presupuesto"
+  },
+  "historia-marfil": {
+    "ancho": 720,
+    "alto": 1280,
+    "anchos": [
+      360,
+      540,
+      720
+    ],
+    "base": "/fotos/historia-marfil-9409183f",
+    "placeholder": "data:image/webp;base64,UklGRoQBAABXRUJQVlA4IHgBAACQCACdASoYACsAPt1epk6opKMiKqoBEBuJYgC/axnhP58cvDj4GlxaQDZ8GTzC0zJSsoPWvTW1V/fupHZFpI8qJm5uFGoZ+jt8/8ScAAD+fgFdEgw2ta/NFheErNLotq8KVUAZWRe10++KUyo9pj+a70+i2ByEg+FwL4IUPFkmoHRqvXhvGc9pYfcY5SnMocbYv6DNAdrS4GBkWp4DcpdQbLIT1HWDv1y+ZSQjSvboGxUdeuZy2FK37AfqSAlY4cdHpb+JN5ieL93lEBGQdIKP+ao71uzjhOGRkX6opq+Gbgd+J4/aifmXW0wGpbOGoH0AjMomIAoxVGXbDtJTejHebRrm7fconBKHC73Fhfhvy3p+yDQW81ercWBcL3TsmwOBNI92Kpb/GggQpXTp3zyDByZN/ReMdRoPG2WGSFACbBeg2dYer9vjXeeMgkj7OAgkUWOH9UdHtoVyq0xOR1O0VGdNWx1RlkH+iQH4xp+Qo8M9fZ1FswAA",
+    "color": "#83847f",
+    "alt": "Clienta con conjunto marfil delante del perfil de Instagram de Ellie"
+  },
+  "historia-carteras": {
+    "ancho": 720,
+    "alto": 1280,
+    "anchos": [
+      360,
+      540,
+      720
+    ],
+    "base": "/fotos/historia-carteras-f09ad437",
+    "placeholder": "data:image/webp;base64,UklGRv4AAABXRUJQVlA4IPIAAADQBgCdASoYACsAPt1iqU6opaQiKqoBEBuJZQDBzA+N2naCYlGEIWistImDANGLitVGaROs93zPK7GPg15j1sAA/e7VAMRhC+NgrtIve/KV4uxA+BhQBk9OfO3tMej9bPmiqfuEw7dP8HMEmzIAc2kuVyeTJHhPSPwp/k1dCZm53lCgVWEjNLZMvN3K1y4L4nRjZXKFhg5jQ1BaTozW9SnHLWffi0dS2+SGznFoL+GRnlW4a5pCXR8ge1rNR/mZ6+QVN7TdjpKAXeV+VEDx1A1TPfXPcwQxp4bHAzOglllwkrvPRX25J0XoOVSY7k16vAAAAA==",
+    "color": "#a3a3a7",
+    "alt": "Historia de Instagram: carteras con Cashea"
+  }
+}

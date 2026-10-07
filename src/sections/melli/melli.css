@@ -1,0 +1,146 @@
+/*
+ * Short Melli y «¿Cuál usarías tú?». Solo lo que Tailwind no expresa bien: la muestra de tela,
+ * la inclinación 3D (variables que escribe inclinacion.js), el brillo y los bucles decorativos.
+ */
+
+/* Muestra de color: botón de tela con relieve suave (luz arriba, sombra abajo). */
+.melli-muestra {
+  box-shadow:
+    inset 0 0 0 1px rgb(21 18 18 / 0.14),
+    inset 0 5px 8px rgb(255 255 255 / 0.28),
+    inset 0 -6px 10px rgb(0 0 0 / 0.18);
+}
+
+/* Onda que sale de la muestra al tocarla (la dispara Probador con la Web Animations API). */
+.melli-onda {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  box-shadow: 0 0 0 2px currentColor;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Capas del probador: una por color, apiladas; la de arriba se destapa en círculo. */
+.melli-capa {
+  position: absolute;
+  inset: 0;
+}
+
+/* ── Tarjetas 3D ─────────────────────────────────────────────────────────────────────── */
+
+/* La ranura no se inclina (mide el puntero sin deformarse); pone la perspectiva. */
+.melli-ranura {
+  perspective: 1100px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* --rx/--ry: puntero o dedo · --giro: distancia al centro del carrusel (-1 a 1). */
+.melli-tarjeta {
+  transform: rotateX(var(--rx, 0deg)) rotateY(calc(var(--ry, 0deg) + var(--giro, 0) * -12deg))
+    scale(calc(1 - var(--giro-abs, 0) * 0.05));
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+/* Brillo que sigue al puntero sobre la foto. */
+.melli-brillo {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--gx, 50%) var(--gy, 40%), rgb(255 255 255 / 0.42), rgb(255 255 255 / 0) 58%);
+  opacity: var(--ga, 0);
+  mix-blend-mode: soft-light;
+}
+
+/* Carrusel del teléfono: cada tarjeta puede quedar centrada (también la primera y la última). */
+.melli-pista {
+  padding-inline: max(10vw, calc(50% - 170px));
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+@media (min-width: 375px) {
+  .melli-pista {
+    padding-inline: max(11vw, calc(50% - 170px));
+  }
+}
+
+.melli-pista::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .melli-pista {
+    padding-inline: var(--margen);
+  }
+}
+
+/* ── Bucles decorativos ──────────────────────────────────────────────────────────────── */
+
+.melli-girar {
+  animation: melli-girar 18s linear infinite;
+}
+
+.melli-subir {
+  animation: melli-subir 2.4s ease-in-out infinite;
+}
+
+.melli-brisa {
+  animation: melli-brisa 3s ease-in-out infinite;
+}
+
+.melli-latido {
+  animation: melli-latido 1.8s ease-out infinite;
+}
+
+@keyframes melli-girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes melli-subir {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes melli-brisa {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes melli-latido {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .melli-girar,
+  .melli-subir,
+  .melli-brisa,
+  .melli-latido {
+    animation: none;
+  }
+
+  .melli-tarjeta {
+    transform: none;
+    will-change: auto;
+  }
+}

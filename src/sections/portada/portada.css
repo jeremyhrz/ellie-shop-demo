@@ -1,0 +1,170 @@
+/*
+ * Intro, navegación y portada de Ellie. Solo lo que no cabe en utilidades de Tailwind:
+ * la retícula de la portada, los bucles suaves (chips, mariposa, indicador de scroll) y la
+ * barra de progreso de las historias. Todo anima transform u opacity.
+ */
+
+/* Retícula: en el teléfono titular → pila → bajada; en escritorio titular y bajada a la
+   izquierda y la pila a la derecha, centrada en alto. */
+.portada-reticula {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: 'titular' 'pila' 'bajada';
+}
+
+.portada-titular {
+  grid-area: titular;
+}
+
+.portada-pila {
+  grid-area: pila;
+}
+
+.portada-bajada {
+  grid-area: bajada;
+}
+
+@media (min-width: 1024px) {
+  .portada-reticula {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 'titular pila' 'bajada pila';
+    align-content: center;
+    column-gap: clamp(2rem, 4vw, 5rem);
+  }
+
+  .portada-pila {
+    align-self: center;
+  }
+}
+
+/* Rubor detrás de la pila: un degradado, no un filtro (sale gratis al pintar). */
+.portada-rubor {
+  background: radial-gradient(closest-side, rgb(239 211 207 / 0.85), rgb(239 211 207 / 0.35) 55%, transparent);
+}
+
+/* Chips que flotan alrededor de la pila (cada uno a su ritmo). */
+.portada-chip {
+  animation: portada-flotar 5.6s ease-in-out infinite;
+}
+
+.portada-chip--b {
+  animation-duration: 6.4s;
+  animation-delay: -2.4s;
+}
+
+.portada-chip--c {
+  animation-duration: 7.2s;
+  animation-delay: -4.1s;
+}
+
+@keyframes portada-flotar {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -7px, 0);
+  }
+}
+
+/* La mariposa, además de aletear (lo hace el componente), deriva despacio. */
+.portada-vuelo {
+  animation: portada-vuelo 12s ease-in-out infinite;
+}
+
+@keyframes portada-vuelo {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate3d(-12px, -10px, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate3d(5px, -22px, 0) rotate(3deg);
+  }
+  75% {
+    transform: translate3d(13px, -7px, 0) rotate(9deg);
+  }
+}
+
+/* Barras de progreso tipo historia de Instagram. La activa se llena en 3,5 s y, al terminar,
+   la pila pasa a la siguiente (animationend): el temporizador ES la barra. */
+.historia-barra {
+  position: relative;
+  flex: 1 1 0%;
+  height: 2px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.4);
+}
+
+.historia-barra > i {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.historia-barra > i.is-llena {
+  transform: scaleX(1);
+}
+
+.historia-barra > i.is-activa {
+  animation: historia-llenar 3.5s linear forwards;
+}
+
+@keyframes historia-llenar {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Indicador de scroll: una gota camel que baja por un hilo. */
+.portada-scroll__hilo {
+  position: relative;
+  display: block;
+  width: 1px;
+  height: 48px;
+  overflow: hidden;
+  background: rgb(21 18 18 / 0.16);
+}
+
+.portada-scroll__hilo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--camel-oscuro);
+  transform: translateY(-100%);
+  animation: portada-gota 2.4s var(--expo) infinite;
+}
+
+@keyframes portada-gota {
+  0% {
+    transform: translateY(-100%);
+  }
+  60%,
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Texto vertical del indicador en el teléfono. */
+.portada-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portada-chip,
+  .portada-vuelo,
+  .portada-scroll__hilo::after {
+    animation: none;
+  }
+
+  .portada-scroll__hilo::after {
+    transform: none;
+  }
+}

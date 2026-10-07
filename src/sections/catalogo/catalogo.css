@@ -1,0 +1,135 @@
+/*
+ * Catálogo y Vista rápida: lo poco que Tailwind no expresa cómodo.
+ * Solo transform/opacity en lo que se anima; con «reducir movimiento», todo quieto o en fundido.
+ */
+
+/* Barra de filtros fija: pegada arriba, o justo debajo de la navegación (64/80 px) cuando se ve. */
+.cat-filtros {
+  top: 0;
+  transition: top 0.6s var(--expo);
+}
+
+.cat-filtros--bajo {
+  top: 64px;
+}
+
+@media (min-width: 1024px) {
+  .cat-filtros--bajo {
+    top: 80px;
+  }
+}
+
+/* Filas con scroll horizontal (filtros y galería) sin barra visible. */
+.cat-sin-barra {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cat-sin-barra::-webkit-scrollbar {
+  display: none;
+}
+
+/* Bloque «¿Buscas algo más?»: ocupa justo las celdas que sobran en la última fila de la cuadrícula. */
+.cat-promo {
+  grid-column: span var(--span-m) / span var(--span-m);
+  container-type: inline-size;
+}
+
+/* Cuando el bloque es ancho, las prendas pasan de frase a índice en columna. */
+@container (min-width: 620px) {
+  .cat-promo .cat-promo-indice {
+    display: flex;
+  }
+
+  .cat-promo .cat-promo-frase {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .cat-promo {
+    grid-column: span var(--span-t) / span var(--span-t);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cat-promo {
+    grid-column: span var(--span-d) / span var(--span-d);
+  }
+}
+
+/* Tarjeta: en escritorio, la segunda foto entra al pasar el cursor y la primera se acerca un poco. */
+.cat-foto-base .foto__img,
+.cat-foto-hover .foto__img {
+  transition:
+    opacity 0.8s var(--suave),
+    transform 1.2s var(--expo);
+}
+
+.cat-foto-hover {
+  opacity: 0;
+  transition: opacity 0.55s var(--suave);
+}
+
+.cat-foto-hover .foto__img {
+  transform: scale(1.07);
+}
+
+.cat-ver {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.35s var(--suave),
+    transform 0.6s var(--expo);
+}
+
+@media (hover: hover) {
+  .cat-tarjeta:hover .cat-foto-hover {
+    opacity: 1;
+  }
+
+  .cat-tarjeta:hover .cat-foto-hover .foto__img {
+    transform: scale(1);
+  }
+
+  .cat-tarjeta:hover .cat-foto-base .foto__img {
+    transform: scale(1.05);
+  }
+
+  .cat-tarjeta:hover .cat-ver {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Punto que late junto a «Consulta disponibilidad por WhatsApp». */
+.cat-latido {
+  animation: cat-latido 2.4s ease-in-out infinite;
+}
+
+@keyframes cat-latido {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(181 136 90 / 0.55);
+  }
+  55% {
+    box-shadow: 0 0 0 7px rgb(181 136 90 / 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cat-latido {
+    animation: none;
+  }
+
+  .cat-filtros {
+    transition: none;
+  }
+
+  .cat-foto-base .foto__img,
+  .cat-foto-hover .foto__img,
+  .cat-ver {
+    transform: none !important;
+    transition-duration: 0.3s;
+  }
+}

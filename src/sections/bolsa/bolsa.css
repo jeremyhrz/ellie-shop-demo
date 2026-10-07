@@ -1,0 +1,129 @@
+/*
+ * Bolsa y botón flotante de WhatsApp: solo lo que Tailwind no expresa bien (keyframes y estados).
+ * Todo anima transform u opacity. Con «reducir movimiento» se apagan brillos, pulsos y giros.
+ */
+
+/* Hoja inferior del teléfono: alto máximo con fallback para iPhones sin dvh. */
+.bolsa-hoja {
+  max-height: 86vh;
+}
+@supports (height: 1dvh) {
+  .bolsa-hoja {
+    max-height: 90dvh;
+  }
+}
+@media (min-width: 768px) {
+  .bolsa-hoja {
+    max-height: none;
+  }
+}
+
+/* Asa de arrastre: el dedo no hace scroll de la página, arrastra la hoja. */
+.bolsa-asa {
+  touch-action: none;
+}
+
+/* Brillo que cruza el botón «Enviar pedido» cada pocos segundos. */
+.bolsa-brillo {
+  position: absolute;
+  inset-block: 0;
+  left: 0;
+  width: 45%;
+  pointer-events: none;
+  background: linear-gradient(105deg, transparent 15%, rgb(251 248 243 / 0.2) 50%, transparent 85%);
+  transform: translateX(-130%);
+  animation: bolsa-brillo 4.4s var(--suave) 1.1s infinite;
+}
+
+@keyframes bolsa-brillo {
+  0% {
+    transform: translateX(-130%);
+  }
+  40%,
+  100% {
+    transform: translateX(260%);
+  }
+}
+
+/* Órbita punteada del estado vacío. */
+.bolsa-orbita {
+  animation: bolsa-girar 40s linear infinite;
+}
+
+@keyframes bolsa-girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Botón flotante: aro que late con suavidad. */
+.wa-pulso {
+  animation: wa-pulso 3s var(--suave) infinite;
+}
+
+@keyframes wa-pulso {
+  0% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  70%,
+  100% {
+    transform: scale(1.75);
+    opacity: 0;
+  }
+}
+
+/* Puntos de «escribiendo…» en la burbuja. */
+.wa-puntos > span {
+  animation: wa-punto 1.05s ease-in-out infinite;
+}
+.wa-puntos > span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.wa-puntos > span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes wa-punto {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.35;
+  }
+  30% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+/* Rótulo «Escríbenos» que asoma a la izquierda del botón (solo con ratón). */
+.wa-rotulo {
+  opacity: 0;
+  transform: translate(10px, -50%);
+  transition:
+    opacity 0.3s var(--suave),
+    transform 0.45s var(--expo);
+}
+
+@media (hover: hover) {
+  .wa-boton:hover .wa-rotulo,
+  .wa-boton:focus-visible .wa-rotulo {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bolsa-brillo,
+  .wa-pulso {
+    display: none;
+  }
+  .bolsa-orbita,
+  .wa-puntos > span {
+    animation: none;
+  }
+  .wa-rotulo {
+    transition-duration: 0.01s;
+  }
+}

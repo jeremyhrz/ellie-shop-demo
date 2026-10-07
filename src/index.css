@@ -1,0 +1,374 @@
+/*
+ * Estilos base de la demo de Ellie Shop: fuentes, tokens, y las pocas clases compartidas
+ * (.contenedor, .seccion, .etiqueta, .titulo-display, .boton…). El resto, con utilidades de Tailwind.
+ */
+
+/* Fuentes autoalojadas (@fontsource-variable), solo el subconjunto latino: el español no necesita más. */
+@font-face {
+  font-family: 'Bodoni Moda Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 900;
+  src: url('@fontsource-variable/bodoni-moda/files/bodoni-moda-latin-opsz-normal.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Bodoni Moda Variable';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400 900;
+  src: url('@fontsource-variable/bodoni-moda/files/bodoni-moda-latin-opsz-italic.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Jost Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('@fontsource-variable/jost/files/jost-latin-wght-normal.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Paleta (la fuente es tailwind.config.js) */
+    --marfil: theme('colors.marfil');
+    --papel: theme('colors.papel');
+    --arena: theme('colors.arena');
+    --rosa: theme('colors.rosa');
+    --tinta: theme('colors.tinta');
+    --cafe: theme('colors.cafe');
+    --espresso: theme('colors.espresso');
+    --camel: theme('colors.camel.DEFAULT');
+    --camel-titulo: theme('colors.camel.titulo');
+    --camel-oscuro: theme('colors.camel.oscuro');
+
+    /* Movimiento (los mismos valores que src/lib/movimiento.js) */
+    --expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --suave: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* Retícula: margen lateral y aire entre secciones */
+    --margen: 20px;
+    --aire: 96px;
+
+    color-scheme: light;
+  }
+
+  @media (min-width: 1024px) {
+    :root {
+      --margen: 48px;
+      --aire: 160px;
+    }
+  }
+
+  html {
+    background-color: var(--marfil);
+    color: var(--tinta);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    /* Reserva el canal de la barra: al bloquear el scroll (modales) la página no salta. */
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(181 136 90 / 0.7) transparent;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    min-height: 100vh;
+    font-family: theme('fontFamily.sans');
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    background-color: var(--marfil);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      font-size: 1.0625rem;
+    }
+  }
+
+  ::selection {
+    background-color: var(--camel);
+    color: var(--papel);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(181 136 90 / 0.6);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--camel-oscuro);
+    outline-offset: 3px;
+  }
+
+  img,
+  svg,
+  video {
+    -webkit-user-drag: none;
+  }
+}
+
+@layer components {
+  /* Ancho máximo de 1320 px con el margen lateral de la retícula. */
+  .contenedor {
+    width: 100%;
+    max-width: calc(1320px + 2 * var(--margen));
+    margin-inline: auto;
+    padding-inline: var(--margen);
+  }
+
+  /* Aire vertical estándar de una sección: 96 px en móvil, 160 px en escritorio. */
+  .seccion {
+    padding-block: var(--aire);
+  }
+
+  /* Rótulo pequeño en mayúsculas espaciadas (sobre títulos, chips, números). */
+  .etiqueta {
+    font-family: theme('fontFamily.sans');
+    font-size: 0.6875rem;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 768px) {
+    .etiqueta {
+      font-size: 0.75rem;
+    }
+  }
+
+  /* Título de sección en Bodoni: enorme, apretado. Las <em> van en cursiva camel. */
+  .titulo-display {
+    font-family: theme('fontFamily.display');
+    font-weight: 400;
+    font-size: clamp(2.5rem, 9vw, 6rem);
+    line-height: 0.95;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  /* Énfasis (*así* en tienda.js): cursiva de Bodoni, también dentro de un párrafo en Jost.
+     En texto pequeño, camel oscuro (contraste 4,6:1); en títulos, el camel de títulos (3,4:1). */
+  .enfasis,
+  .titulo-display em {
+    font-family: theme('fontFamily.display');
+    font-style: italic;
+    color: var(--camel-oscuro);
+  }
+
+  .titulo-display em,
+  .titulo-display .enfasis {
+    color: var(--camel-titulo);
+  }
+
+  /* Sobre fondo oscuro (clase .sobre-oscuro en la sección), el camel claro ya contrasta de sobra. */
+  .sobre-oscuro .enfasis,
+  .sobre-oscuro .titulo-display em {
+    color: var(--camel);
+  }
+
+  /*
+   * Botones: píldora de 48 px de alto con un relleno camel que sube al pasar el cursor.
+   * .boton-oscuro (sobre claro) · .boton-claro (sobre oscuro) · .boton-linea (borde, toma el color del texto)
+   */
+  .boton {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65em;
+    min-height: 48px;
+    padding: 0.85em 1.75em;
+    border-radius: 999px;
+    font-family: theme('fontFamily.sans');
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    transition:
+      color 0.35s var(--suave),
+      box-shadow 0.35s var(--suave),
+      transform 0.35s var(--suave);
+  }
+
+  .boton::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background-color: var(--camel);
+    transform: translateY(101%);
+    transition: transform 0.55s var(--expo);
+  }
+
+  .boton:active {
+    transform: scale(0.97);
+  }
+
+  .boton:disabled,
+  .boton[aria-disabled='true'] {
+    opacity: 0.45;
+    pointer-events: none;
+  }
+
+  .boton-oscuro {
+    background-color: var(--tinta);
+    color: var(--papel);
+  }
+
+  .boton-claro {
+    background-color: var(--papel);
+    color: var(--tinta);
+  }
+
+  .boton-linea {
+    background-color: transparent;
+    color: inherit;
+    box-shadow: inset 0 0 0 1px currentColor;
+  }
+
+  @media (hover: hover) {
+    .boton:hover::before {
+      transform: translateY(0);
+    }
+    .boton-claro:hover,
+    .boton-linea:hover {
+      color: var(--papel);
+      box-shadow: inset 0 0 0 1px transparent;
+    }
+  }
+
+  /* Máscara para revelar texto desde abajo (TextoDividido). Deja aire a acentos, descendentes y cursivas. */
+  .mascara {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    padding: 0.1em 0.06em 0.16em;
+    margin: -0.1em -0.06em -0.16em;
+  }
+
+  /* <Foto>: el placeholder borroso es el fondo; la foto se funde encima al cargar. */
+  .foto {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .foto--rellenar {
+    position: absolute;
+    inset: 0;
+  }
+
+  .foto__capa {
+    position: absolute;
+    inset: 0;
+  }
+
+  .foto__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s var(--suave);
+  }
+
+  .foto__img.is-cargada {
+    opacity: 1;
+  }
+
+  /* Mariposa que revolotea: aletea un par de veces, descansa y flota (en el <g>, no en el <svg>,
+     para no pisar las transformaciones que le pongas desde fuera). */
+  .mariposa--revolotea .mariposa__cuerpo {
+    transform-box: view-box;
+    transform-origin: 715px -1700px;
+    animation: mariposa-flotar 7s ease-in-out infinite;
+  }
+
+  .mariposa--revolotea .mariposa__ala-sup {
+    transform-box: view-box;
+    transform-origin: 816px -1250px;
+    animation: mariposa-aleteo 3.6s ease-in-out infinite;
+  }
+
+  .mariposa--revolotea .mariposa__ala-inf {
+    transform-box: view-box;
+    transform-origin: 816px -1250px;
+    animation: mariposa-aleteo-inf 3.6s ease-in-out infinite;
+  }
+
+  /* Cursor propio: solo cuando <Cursor> está activo (puntero fino). */
+  .con-cursor,
+  .con-cursor * {
+    cursor: none !important;
+  }
+
+  .con-cursor :is(input:not([type='checkbox'], [type='radio'], [type='range']), textarea, [contenteditable]) {
+    cursor: text !important;
+  }
+}
+
+@keyframes mariposa-aleteo {
+  0%, 30%, 100% { transform: scaleX(1); }
+  8% { transform: scaleX(0.38); }
+  16% { transform: scaleX(1); }
+  23% { transform: scaleX(0.55); }
+}
+
+@keyframes mariposa-aleteo-inf {
+  0%, 31%, 100% { transform: scaleX(1); }
+  9% { transform: scaleX(0.6); }
+  17% { transform: scaleX(1); }
+  24% { transform: scaleX(0.75); }
+}
+
+@keyframes mariposa-flotar {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(0, -70px) rotate(-4deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mariposa--revolotea .mariposa__cuerpo,
+  .mariposa--revolotea .mariposa__ala-sup,
+  .mariposa--revolotea .mariposa__ala-inf {
+    animation: none;
+  }
+
+  .foto__img {
+    transition-duration: 0.3s;
+  }
+}

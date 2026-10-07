@@ -1,0 +1,96 @@
+/*
+ * Cómo comprar, Visítanos, Instagram y Pie: lo poco que no cabe en utilidades de Tailwind.
+ * Todo anima transform u opacity; con «reducir movimiento» se queda quieto.
+ */
+
+/* Tarjetas apiladas en el teléfono: la de abajo se encoge mientras la siguiente la tapa.
+   La escala llega de framer-motion como variable (--escala); en escritorio no aplica. */
+@media (max-width: 1023px) {
+  .tienda-pila {
+    transform: scale(var(--escala, 1));
+    transform-origin: 50% 0;
+  }
+}
+
+/* Esqueleto de la tasa BCV mientras carga: un brillo que cruza. */
+.tienda-esqueleto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background-color: rgb(245 240 232 / 0.08);
+}
+
+.tienda-esqueleto::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgb(245 240 232 / 0.16), transparent);
+  transform: translateX(-100%);
+  animation: tienda-brillo 1.5s var(--suave) infinite;
+}
+
+@keyframes tienda-brillo {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Punto «en vivo» con un aro que late. */
+.tienda-envivo {
+  position: relative;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background-color: #7ed39a;
+}
+
+.tienda-envivo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: inherit;
+  animation: tienda-latido 2s var(--suave) infinite;
+}
+
+@keyframes tienda-latido {
+  from {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  to {
+    transform: scale(3.2);
+    opacity: 0;
+  }
+}
+
+/* Sello circular de Visítanos que gira despacio. */
+.tienda-giro {
+  animation: tienda-girar 24s linear infinite;
+}
+
+@keyframes tienda-girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Enlace con subrayado que crece desde la izquierda. */
+.tienda-enlace {
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+  transition: background-size 0.5s var(--expo), color 0.3s var(--suave);
+}
+
+.tienda-enlace:hover,
+.tienda-enlace:focus-visible {
+  background-size: 100% 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tienda-esqueleto::after,
+  .tienda-envivo::after,
+  .tienda-giro {
+    animation: none;
+  }
+}

@@ -1,0 +1,898 @@
+{
+  "anchos": [
+    360,
+    540,
+    720,
+    1080
+  ],
+  "calidad": {
+    "avif": 56,
+    "webp": 78
+  },
+  "placeholder": 24,
+  "fotos": {
+    "vestido-azul": {
+      "origen": "03_DdzJr8ACbWc_1.jpg",
+      "caja": [
+        0.04,
+        0.215,
+        0.94,
+        1.0
+      ],
+      "proporcion": "4:5",
+      "alt": "Vestido azul rey con escote en V y falda de vuelo",
+      "parches": [
+        {
+          "caja": [
+            0.49,
+            0.729,
+            0.866,
+            0.778
+          ],
+          "metodo": "interpolar",
+          "suave": 8
+        },
+        {
+          "poligono": [
+            [
+              0.8026,
+              0.6116
+            ],
+            [
+              0.8172,
+              0.6147
+            ],
+            [
+              0.8288,
+              0.6173
+            ],
+            [
+              0.845,
+              0.6272
+            ],
+            [
+              0.8554,
+              0.6446
+            ],
+            [
+              0.8547,
+              0.6613
+            ],
+            [
+              0.845,
+              0.6772
+            ],
+            [
+              0.8269,
+              0.6889
+            ],
+            [
+              0.8026,
+              0.692
+            ],
+            [
+              0.779,
+              0.688
+            ],
+            [
+              0.7612,
+              0.6769
+            ],
+            [
+              0.7501,
+              0.6602
+            ],
+            [
+              0.7506,
+              0.6439
+            ],
+            [
+              0.7594,
+              0.6321
+            ],
+            [
+              0.7651,
+              0.6262
+            ],
+            [
+              0.7756,
+              0.621
+            ],
+            [
+              0.7806,
+              0.6156
+            ],
+            [
+              0.7894,
+              0.6139
+            ]
+          ],
+          "desde": [
+            0.11,
+            0
+          ],
+          "suave": 4
+        },
+        {
+          "caja": [
+            0.166,
+            0.7,
+            0.252,
+            0.763
+          ],
+          "metodo": "interpolar",
+          "suave": 8
+        },
+        {
+          "caja": [
+            0.24,
+            0.33,
+            0.333,
+            0.437
+          ],
+          "metodo": "interpolar",
+          "suave": 8
+        }
+      ]
+    },
+    "vestido-rojo": {
+      "origen": "03_DdzJr8ACbWc_2.jpg",
+      "caja": [
+        0.04,
+        0.215,
+        0.94,
+        1.0
+      ],
+      "proporcion": "4:5",
+      "alt": "Vestido rojo con lazo en la cintura",
+      "parches": [
+        {
+          "caja": [
+            0.514,
+            0.736,
+            0.893,
+            0.776
+          ],
+          "metodo": "interpolar",
+          "suave": 8
+        },
+        {
+          "poligono": [
+            [
+              0.7,
+              0.646
+            ],
+            [
+              0.718,
+              0.598
+            ],
+            [
+              0.76,
+              0.583
+            ],
+            [
+              0.818,
+              0.588
+            ],
+            [
+              0.818,
+              0.622
+            ],
+            [
+              0.792,
+              0.65
+            ],
+            [
+              0.742,
+              0.66
+            ],
+            [
+              0.708,
+              0.659
+            ]
+          ],
+          "desde": [
+            0.12,
+            0
+          ],
+          "suave": 10
+        },
+        {
+          "poligono": [
+            [
+              0.171,
+              0.684
+            ],
+            [
+              0.293,
+              0.662
+            ],
+            [
+              0.296,
+              0.67
+            ],
+            [
+              0.275,
+              0.712
+            ],
+            [
+              0.262,
+              0.742
+            ],
+            [
+              0.19,
+              0.753
+            ],
+            [
+              0.18,
+              0.75
+            ]
+          ],
+          "desde": [
+            -0.13,
+            0
+          ],
+          "suave": 8
+        },
+        {
+          "poligono": [
+            [
+              0.236,
+              0.38
+            ],
+            [
+              0.3,
+              0.355
+            ],
+            [
+              0.323,
+              0.37
+            ],
+            [
+              0.33,
+              0.4
+            ],
+            [
+              0.3,
+              0.405
+            ],
+            [
+              0.27,
+              0.428
+            ],
+            [
+              0.255,
+              0.42
+            ],
+            [
+              0.238,
+              0.4
+            ]
+          ],
+          "desde": [
+            -0.1,
+            0
+          ],
+          "suave": 10
+        }
+      ]
+    },
+    "vestido-negro": {
+      "origen": "03_DdzJr8ACbWc_3.jpg",
+      "caja": [
+        0.04,
+        0.215,
+        0.94,
+        1.0
+      ],
+      "proporcion": "4:5",
+      "alt": "Vestido negro con corset y transparencias",
+      "parches": [
+        {
+          "poligono": [
+            [
+              0.497,
+              0.727
+            ],
+            [
+              0.649,
+              0.727
+            ],
+            [
+              0.66,
+              0.779
+            ],
+            [
+              0.497,
+              0.779
+            ]
+          ],
+          "metodo": "interpolar",
+          "desenfoque": 6,
+          "grano": 4,
+          "suave": 8
+        },
+        {
+          "poligono": [
+            [
+              0.645,
+              0.727
+            ],
+            [
+              0.852,
+              0.727
+            ],
+            [
+              0.852,
+              0.779
+            ],
+            [
+              0.656,
+              0.779
+            ]
+          ],
+          "metodo": "interpolar",
+          "desenfoque": 4,
+          "grano": 4,
+          "suave": 4
+        },
+        {
+          "poligono": [
+            [
+              0.338,
+              0.3465
+            ],
+            [
+              0.3326,
+              0.3672
+            ],
+            [
+              0.3172,
+              0.3847
+            ],
+            [
+              0.2942,
+              0.3964
+            ],
+            [
+              0.267,
+              0.4005
+            ],
+            [
+              0.2398,
+              0.3964
+            ],
+            [
+              0.2168,
+              0.3847
+            ],
+            [
+              0.2014,
+              0.3672
+            ],
+            [
+              0.196,
+              0.3465
+            ],
+            [
+              0.2014,
+              0.3258
+            ],
+            [
+              0.2168,
+              0.3083
+            ],
+            [
+              0.2398,
+              0.2966
+            ],
+            [
+              0.267,
+              0.2925
+            ],
+            [
+              0.2942,
+              0.2966
+            ],
+            [
+              0.3172,
+              0.3083
+            ],
+            [
+              0.3326,
+              0.3258
+            ]
+          ],
+          "metodo": "interpolar",
+          "suave": 8
+        },
+        {
+          "caja": [
+            0.727,
+            0.296,
+            0.783,
+            0.34
+          ],
+          "metodo": "interpolar",
+          "suave": 8
+        },
+        {
+          "poligono": [
+            [
+              0.1962,
+              0.7666
+            ],
+            [
+              0.2254,
+              0.7284
+            ],
+            [
+              0.2448,
+              0.7423
+            ],
+            [
+              0.2795,
+              0.7364
+            ],
+            [
+              0.2812,
+              0.7378
+            ],
+            [
+              0.2777,
+              0.743
+            ],
+            [
+              0.2719,
+              0.7534
+            ],
+            [
+              0.2673,
+              0.7621
+            ],
+            [
+              0.2643,
+              0.7708
+            ],
+            [
+              0.2626,
+              0.7794
+            ],
+            [
+              0.2599,
+              0.7847
+            ],
+            [
+              0.2406,
+              0.7989
+            ],
+            [
+              0.2344,
+              0.7989
+            ],
+            [
+              0.2263,
+              0.7742
+            ],
+            [
+              0.1962,
+              0.769
+            ]
+          ],
+          "desde": [
+            -0.09,
+            0
+          ],
+          "suave": 4
+        }
+      ]
+    },
+    "vestido-fucsia": {
+      "origen": "03_DdzJr8ACbWc_4.jpg",
+      "caja": [
+        0.04,
+        0.215,
+        0.94,
+        1.0
+      ],
+      "proporcion": "4:5",
+      "alt": "Vestido fucsia de manga larga ajustado",
+      "parches": [
+        {
+          "caja": [
+            0.457,
+            0.728,
+            0.893,
+            0.779
+          ],
+          "metodo": "interpolar",
+          "suave": 8
+        },
+        {
+          "poligono": [
+            [
+              0.234,
+              0.388
+            ],
+            [
+              0.329,
+              0.355
+            ],
+            [
+              0.354,
+              0.402
+            ],
+            [
+              0.258,
+              0.434
+            ]
+          ],
+          "desde": [
+            -0.11,
+            0
+          ],
+          "suave": 8
+        },
+        {
+          "caja": [
+            0.662,
+            0.29,
+            0.762,
+            0.37
+          ],
+          "metodo": "interpolar",
+          "suave": 8
+        },
+        {
+          "poligono": [
+            [
+              0.735,
+              0.604
+            ],
+            [
+              0.79,
+              0.603
+            ],
+            [
+              0.81,
+              0.625
+            ],
+            [
+              0.818,
+              0.66
+            ],
+            [
+              0.835,
+              0.695
+            ],
+            [
+              0.832,
+              0.712
+            ],
+            [
+              0.81,
+              0.716
+            ],
+            [
+              0.765,
+              0.718
+            ],
+            [
+              0.722,
+              0.716
+            ],
+            [
+              0.72,
+              0.7
+            ],
+            [
+              0.733,
+              0.68
+            ],
+            [
+              0.735,
+              0.64
+            ]
+          ],
+          "desde": [
+            0.13,
+            0
+          ],
+          "suave": 10
+        }
+      ]
+    },
+    "melli-plano": {
+      "origen": "06_Dde_kMZmpCw_1.jpg",
+      "caja": [
+        0.145,
+        0.11,
+        0.855,
+        0.645
+      ],
+      "proporcion": "1:1",
+      "alt": "Cuatro Short Melli apilados con sus cinturones: negro, café, beige y beige claro",
+      "parches": [
+        {
+          "poligono": [
+            [
+              0.7186,
+              0.1404
+            ],
+            [
+              0.7456,
+              0.1375
+            ],
+            [
+              0.7629,
+              0.1563
+            ],
+            [
+              0.7784,
+              0.178
+            ],
+            [
+              0.7957,
+              0.2026
+            ],
+            [
+              0.8092,
+              0.2257
+            ],
+            [
+              0.8189,
+              0.246
+            ],
+            [
+              0.8258,
+              0.2662
+            ],
+            [
+              0.8312,
+              0.2894
+            ],
+            [
+              0.8324,
+              0.3097
+            ],
+            [
+              0.8285,
+              0.3125
+            ],
+            [
+              0.8274,
+              0.3299
+            ],
+            [
+              0.7996,
+              0.3314
+            ],
+            [
+              0.7977,
+              0.3125
+            ],
+            [
+              0.7919,
+              0.2894
+            ],
+            [
+              0.7861,
+              0.2662
+            ],
+            [
+              0.7765,
+              0.246
+            ],
+            [
+              0.7668,
+              0.2286
+            ],
+            [
+              0.7552,
+              0.2055
+            ],
+            [
+              0.7456,
+              0.1881
+            ],
+            [
+              0.734,
+              0.1679
+            ],
+            [
+              0.7186,
+              0.1577
+            ]
+          ],
+          "desde": [
+            0.07,
+            -0.03
+          ],
+          "suave": 4
+        }
+      ]
+    },
+    "melli-detalle": {
+      "origen": "06_Dde_kMZmpCw_2.jpg",
+      "caja": [
+        0.15,
+        0.0,
+        0.81,
+        0.492
+      ],
+      "proporcion": "1:1",
+      "alt": "Short Melli café con su cinturón a juego y hebilla dorada: talle alto y pinzas",
+      "parches": [
+        {
+          "caja": [
+            0.275,
+            0.352,
+            0.722,
+            0.426
+          ],
+          "metodo": "interpolar",
+          "desenfoque": 1,
+          "grano": 3,
+          "suave": 8
+        }
+      ]
+    },
+    "outfit-rojo": {
+      "origen": "06_Dde_kMZmpCw_3.jpg",
+      "caja": [
+        0.05,
+        0.13,
+        0.95,
+        0.97
+      ],
+      "proporcion": "4:5",
+      "alt": "Blusa roja de mangas caladas con Short Melli beige claro"
+    },
+    "outfit-negro": {
+      "origen": "06_Dde_kMZmpCw_4.jpg",
+      "caja": [
+        0.05,
+        0.13,
+        0.95,
+        0.97
+      ],
+      "proporcion": "4:5",
+      "alt": "Blusa negra de mangas caladas con Short Melli café"
+    },
+    "outfit-azul": {
+      "origen": "06_Dde_kMZmpCw_5.jpg",
+      "caja": [
+        0.05,
+        0.13,
+        0.95,
+        0.97
+      ],
+      "proporcion": "4:5",
+      "alt": "Blusa azul de mangas caladas con Short Melli beige"
+    },
+    "conjunto-marfil": {
+      "origen": "04_DdtvU1FuUkf.jpg",
+      "caja": [
+        0.18,
+        0.565,
+        0.84,
+        1.0
+      ],
+      "proporcion": "4:5",
+      "alt": "Conjunto marfil: chaleco cruzado con hebilla dorada y pantalón a juego"
+    },
+    "look-camel": {
+      "origen": "01_DeFudAsPpvK.jpg",
+      "caja": [
+        0.0,
+        0.185,
+        1.0,
+        0.89
+      ],
+      "proporcion": "4:5",
+      "alt": "Vestido tipo blazer sin mangas color camel con cinturón blanco",
+      "parches": [
+        {
+          "caja": [
+            0.275,
+            0.678,
+            0.715,
+            0.722
+          ],
+          "metodo": "interpolar",
+          "desenfoque": 1,
+          "grano": 4,
+          "suave": 8
+        }
+      ]
+    },
+    "carteras": {
+      "origen": "02_DeCqyFfPkuR.jpg",
+      "caja": [
+        0.0,
+        0.07,
+        1.0,
+        0.775
+      ],
+      "proporcion": "4:5",
+      "alt": "Dos carteras, una blanca con monograma y una rosa, sobre el sofá capitoné de la tienda",
+      "parches": [
+        {
+          "caja": [
+            0.395,
+            0.718,
+            0.64,
+            0.772
+          ],
+          "metodo": "interpolar",
+          "desenfoque": 3,
+          "suave": 8
+        }
+      ]
+    },
+    "tienda-vitrina": {
+      "origen": "05_Ddo9lGpJIJj.jpg",
+      "proporcion": "9:16",
+      "alt": "Vitrina de Ellie con un maniquí y una clienta mirando la ropa"
+    },
+    "tienda-vitrina-ancha": {
+      "origen": "05_Ddo9lGpJIJj.jpg",
+      "caja": [
+        0.0,
+        0.3,
+        1.0,
+        0.72
+      ],
+      "proporcion": "4:3",
+      "alt": "Vitrina de Ellie con un maniquí y una clienta mirando la ropa"
+    },
+    "historia-camel": {
+      "origen": "01_DeFudAsPpvK.jpg",
+      "proporcion": "9:16",
+      "alt": "Historia de Instagram: luce increíble con poco presupuesto"
+    },
+    "historia-marfil": {
+      "origen": "04_DdtvU1FuUkf.jpg",
+      "proporcion": "9:16",
+      "alt": "Clienta con conjunto marfil delante del perfil de Instagram de Ellie",
+      "parches": [
+        {
+          "poligono": [
+            [
+              0.062,
+              0.309
+            ],
+            [
+              0.445,
+              0.309
+            ],
+            [
+              0.42,
+              0.345
+            ],
+            [
+              0.406,
+              0.4
+            ],
+            [
+              0.393,
+              0.457
+            ],
+            [
+              0.062,
+              0.457
+            ]
+          ],
+          "metodo": "color",
+          "color": "#0e1118",
+          "suave": 2
+        }
+      ]
+    },
+    "historia-carteras": {
+      "origen": "02_DeCqyFfPkuR.jpg",
+      "proporcion": "9:16",
+      "alt": "Historia de Instagram: carteras con Cashea"
+    }
+  }
+}
